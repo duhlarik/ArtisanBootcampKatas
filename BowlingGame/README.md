@@ -4,17 +4,26 @@ The game consists of 10 frames as shown above.  In each frame the player has
 two opportunities to knock down 10 pins.  The score for the frame is the total
 number of pins knocked down, plus bonuses for strikes and spares.
 
-A spare is when the player knocks down all 10 pins in two tries.  The bonus for
-that frame is the number of pins knocked down by the next roll.  So in frame 3
-above, the score is 10 (the total number knocked down) plus a bonus of 5 (the
-number of pins knocked down on the next roll.)
+A _line_ in bowling is one game.  Below is an example:
 
-A strike is when the player knocks down all 10 pins on his first try.  The bonus
-for that frame is the value of the next two balls rolled.
+|Bowling game scoring|
+|Name|1|2|3|4|5|6|7|8|9|10|
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|Frames => | 3   3|4    2|3   /|5   3|  X|4    /|2   0|0    0|0    0|X  3  /| 
+|PlayerName|6|12|27|35|55|67| 69|69|69|89|  
 
-In the tenth frame a player who rolls a spare or strike is allowed to roll the extra
-balls to complete the frame.  However no more than three balls can be rolled in
-tenth frame.
+
+An open frame is when the player rolls twice and knocks down fewer than all ten pins.
+
+A spare (/) is when the player knocks down all 10 pins in two tries.  The bonus for that frame is the number of pins knocked down by the next roll.  
+
+So in frame 3 above, we add 15 (10) plus a bonus of 5 (the number of pins knocked down on the next roll.)
+
+A strike (X) is when the player knocks down all 10 pins on his first try.  The bonus
+for that frame is the value of the next two balls rolled.  See frames 5 and 10.
+
+In the tenth frame a player who rolls a spare or strike is allowed to roll the extra 2
+balls to complete the frame.  However no more than three balls can be rolled in tenth frame.
 
 ## Requirements
 Write a class named “Game” that has two methods:
