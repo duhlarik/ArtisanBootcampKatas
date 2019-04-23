@@ -6,11 +6,11 @@ number of pins knocked down, plus bonuses for strikes and spares.
 
 A _line_ in bowling is one game.  Below is an example:
 
-|Bowling game scoring|
-|Name|1|2|3|4|5|6|7|8|9|10|
-|----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|Frames => | 3   3|4    2|3   /|5   3|  X|4    /|2   0|0    0|0    0|X  3  /| 
-|PlayerName|6|12|27|35|55|67| 69|69|69|89|  
+|Bowling game scoring|||||||||||
+|----------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:| :--------:|
+|Frames =>|1|2|3|4|5|6|7|8|9|10| 
+|Rolls => |3    3|4     2|3     /|5     3|    X|4     /|2     0|0     0|0    0|X    3 /|  
+|Sean |6|12|27|35|55|67| 69|69|69|89| 
 
 
 An open frame is when the player rolls twice and knocks down fewer than all ten pins.
