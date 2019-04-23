@@ -19,9 +19,9 @@ A spare (/) is when the player knocks down all 10 pins in two tries.  The bonus 
 
 So in the third frame above, we take 12 from the second frame score and add 15 (10 for the pins knocked down in the third frame plus a bonus of 5 from the first roll of the fourth frame).
 
-A strike (X) is when the player knocks down all 10 pins on his first try.  The bonus for that frame is the value of the next two balls rolled.  See frames 5 and 10.
+A strike (X) is when the player knocks down all 10 pins on their first try.  The bonus for that frame is the value of the next two balls rolled.  See frames 5 and 10.
 
-In the tenth frame a player who rolls a spare or strike is allowed to roll the one or two bonus rolls to complete the frame.  However no more than three balls can be rolled in tenth frame.
+In the tenth frame a player who rolls a spare or strike is allowed to roll the one or two bonus rolls to complete the frame.  However no more than three balls may be rolled in tenth frame.
 
 ## Requirements
 Write a class named “Game” that has two methods:
