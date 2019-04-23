@@ -17,13 +17,11 @@ An open frame is when the player rolls twice and knocks down fewer than all ten 
 
 A spare (/) is when the player knocks down all 10 pins in two tries.  The bonus for that frame is the number of pins knocked down by the next roll.  
 
-So in frame 3 above, we add 15 (10) plus a bonus of 5 (the number of pins knocked down on the next roll.)
+So in frame 3 above, we take 12 from frame 2 and add 15 (10 for the pins knocked down in frame 3 plus a bonus of 5 from the first roll of frame 4).
 
-A strike (X) is when the player knocks down all 10 pins on his first try.  The bonus
-for that frame is the value of the next two balls rolled.  See frames 5 and 10.
+A strike (X) is when the player knocks down all 10 pins on his first try.  The bonus for that frame is the value of the next two balls rolled.  See frames 5 and 10.
 
-In the tenth frame a player who rolls a spare or strike is allowed to roll the extra 2
-balls to complete the frame.  However no more than three balls can be rolled in tenth frame.
+In the tenth frame a player who rolls a spare or strike is allowed to roll the extra 2 balls to complete the frame.  However no more than three balls can be rolled in tenth frame.
 
 ## Requirements
 Write a class named “Game” that has two methods:
