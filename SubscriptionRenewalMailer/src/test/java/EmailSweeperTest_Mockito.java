@@ -50,4 +50,5 @@ public class EmailSweeperTest_Mockito {
 
         verify(mockUserMailer).sendBillingProblemEmailTo(mockUserRepository.getUsers().get(1),"");
     }
+
 }
