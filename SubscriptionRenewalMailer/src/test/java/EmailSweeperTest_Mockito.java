@@ -12,9 +12,9 @@ import static org.mockito.Mockito.*;
 
 public class EmailSweeperTest_Mockito {
 
-    UserRepository mockUserRepository = mock(UserRepository.class);
-    UserMailer mockUserMailer = mock(UserMailer.class);
-    EmailSweeper sweeper = new EmailSweeper(mockUserRepository, mockUserMailer);
+    private UserRepository mockUserRepository = mock(UserRepository.class);
+    private UserMailer mockUserMailer = mock(UserMailer.class);
+    private EmailSweeper sweeper = new EmailSweeper(mockUserRepository, mockUserMailer);
 
     @Test
     public void whenSweeperIsCalledAnEmailIsSentToARecipientWithAMessage() {
