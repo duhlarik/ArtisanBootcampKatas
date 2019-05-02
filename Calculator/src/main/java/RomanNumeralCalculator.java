@@ -4,3 +4,18 @@ public class RomanNumeralCalculator {
       return null;
     }
 }
+
+/*
+CM -> DCCCC
+M -> DD
+CD -> CCCC
+D -> CCCCC
+XC -> LXXXX
+C -> LL
+XL -> XXXX
+L -> XXXXX
+IX -> VIIII
+X -> VV
+IV -> IIII
+V -> IIIII
+*/
