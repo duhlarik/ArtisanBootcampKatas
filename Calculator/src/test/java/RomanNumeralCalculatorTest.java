@@ -4,13 +4,23 @@ import org.junit.Test;
 
 public class RomanNumeralCalculatorTest {
 
-  @Test
-  public void onePlusOneIsTwo() {
-    RomanNumeralCalculator calculator = new RomanNumeralCalculator();
+    private String actual;
+    private String expected;
+    private RomanNumeralCalculator calculator = new RomanNumeralCalculator();
 
-    String actualResult = calculator.add("I", "I");
-    String expectedResult = "II";
+    @Test
+    public void onePlusOneIsTwo() {
+        actual = calculator.add("I", "I");
+        expected = "II";
 
-    assertEquals(expectedResult, actualResult);
-  }
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void twoPlusTwoIsFour() {
+        actual = calculator.add("II", "II");
+        expected = "IV";
+
+        assertEquals(expected, actual);
+    }
 }
