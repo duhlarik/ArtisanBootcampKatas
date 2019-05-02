@@ -1,11 +1,17 @@
 public class RomanNumeralCalculator {
 
     public String add(String numeral1, String numeral2) {
-        if(numeral1.equals("I") && numeral2.equals("I")) {
+        String result;
 
-            return "II";
-        }
-        return  "IV";
+        numeral1 = numeral1.replace("IV", "IIII");
+        numeral2 = numeral2.replace("IV", "IIII");
+        result = numeral1 + numeral2;
+
+        result = result
+                .replace("IIIII", "V")
+                .replace("IIII", "IV");
+
+        return result;
     }
 }
 

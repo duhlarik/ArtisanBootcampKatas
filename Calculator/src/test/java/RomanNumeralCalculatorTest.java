@@ -23,4 +23,12 @@ public class RomanNumeralCalculatorTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void fourPlusFourIsEight() {
+        actual = calculator.add("IV" , "IV");
+        expected = "VIII";
+
+        assertEquals(expected, actual);
+    }
 }
