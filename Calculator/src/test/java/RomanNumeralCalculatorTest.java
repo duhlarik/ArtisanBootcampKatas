@@ -39,4 +39,12 @@ public class RomanNumeralCalculatorTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void fivePlusFiveIsTen() {
+        actual = calculator.add("V", "V");
+        expected = "X";
+
+        assertEquals(expected, actual);
+    }
 }

@@ -15,6 +15,7 @@ public class RomanNumeralCalculator {
 
         result = result
                 .replace("IIIII", "V")
+                .replace("VV", "X")
                 .replace("VIIII", "IX")
                 .replace("IIII", "IV");
 
